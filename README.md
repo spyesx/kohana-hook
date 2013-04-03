@@ -5,7 +5,7 @@
 
 ## How to create a hooker
 
-First you will need to load all actions registered from you __construct() or before():
+First you will need to load all actions registered from your __construct() or before():
 
 ```php
 Hook::instance()->add_actions_from_config('challenges');
@@ -49,7 +49,7 @@ class Myclass {
 	 * @param   array  $hookParams   The array provided with the method do_all_actions
 	 * @param   array  $actionParam1 params[0] registered in config/hook.php
 	 * @param   array  $actionParam2 params[1] registered in config/hook.php
-	 * @return  Encrypt
+	 * @return  *
 	 */
 
 	public function method_to_call($hookParams, $actionParam1, $actionParam2){
